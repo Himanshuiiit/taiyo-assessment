@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+##Usage Guides
+![image1](https://github.com/Himanshuiiit/taiyo-assessment/assets/76449638/1d00218d-b34e-4b21-ae0d-26f4edf28be1)
+![image2](https://github.com/Himanshuiiit/taiyo-assessment/assets/76449638/b25e7e6c-d8e3-4778-9f3e-50b01f9f7534)
+![image3](https://github.com/Himanshuiiit/taiyo-assessment/assets/76449638/242d97c9-5536-4f8a-a3e3-1f6bb51db59a)
+
 ## Available Scripts
 
 In the project directory, you can run:
