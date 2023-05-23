@@ -1,5 +1,6 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import ReactLoading from "react-loading";
 import "leaflet/dist/leaflet.css";
 import { useQuery } from "react-query";
 
@@ -64,7 +65,12 @@ const Map = () => {
   });
 
   if (status === "loading") {
-    return <div>Loading...</div>;
+    return (
+      <div className="flex flex-col justify-center text-center w-full h-96 my-20">
+        <ReactLoading type="spin" className="mx-auto" color="#000" />
+        <h1 className="text-xl font-semibold my-4">Loading Map Data</h1>
+      </div>
+    );
   } else if (status === "error") {
     return <div>Error fetching data</div>;
   } else {

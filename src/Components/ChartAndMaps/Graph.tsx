@@ -12,6 +12,7 @@ import {
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 import type { ChartData, ChartOptions } from "chart.js";
+import ReactLoading from "react-loading";
 
 
 interface IGraphData {
@@ -88,7 +89,12 @@ const Graph = () => {
   };
 
   if (status === "loading") {
-    return <div>Loading...</div>;
+    return (
+      <div className="flex flex-col justify-center text-center w-full h-96 my-20">
+        <ReactLoading type="spin" className="mx-auto" color="#000" />
+        <h1 className="text-xl font-semibold my-4">Loading Graph Data</h1>
+      </div>
+    );
   } else if (status === "error") {
     return <div>Error fetching data</div>;
   } else {
